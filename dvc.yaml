@@ -1,0 +1,16 @@
+stages:
+  train:
+    cmd: python src/train.py
+    deps:
+    - data/breast_cancer.csv
+    - src/train.py
+    params:
+    - model.max_depth
+    - model.n_estimators
+    - train.random_state
+    - train.test_size
+    outs:
+    - models/model.pkl
+    metrics:
+    - reports/metrics.json:
+        cache: false
