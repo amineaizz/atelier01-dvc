@@ -13,16 +13,16 @@ stages:
       size: 1550
     params:
       params.yaml:
-        model.max_depth: 5
-        model.n_estimators: 100
+        model.max_depth: 3
+        model.n_estimators: 200
         train.random_state: 42
         train.test_size: 0.2
     outs:
     - path: models/model.pkl
       hash: md5
-      md5: 86cb930f2c72037b45a9e48bf1958d2e
-      size: 264473
+      md5: 3ed5ffa8eb90453813ff439fbd716843
+      size: 302553
     - path: reports/metrics.json
       hash: md5
-      md5: 8313d503ec153882b963edbd56ea900f
-      size: 77
+      md5: 0dd19204640f3a4afad748714d159f93
+      size: 76
